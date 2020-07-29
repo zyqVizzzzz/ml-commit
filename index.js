@@ -27,10 +27,10 @@ if (arg[2] && arg[2] === "init") {
   // async
   list.ask(function (answer) {
     file.set("scripts", {
-      "my-ci":
+      "ml-ci":
         answer === "yes"
-          ? "git add . && cross-env ./node_modules/.bin/my-commit"
-          : "cross-env ./node_modules/.bin/my-commit",
+          ? "git add . && cross-env ./node_modules/.bin/ml-commit"
+          : "cross-env ./node_modules/.bin/ml-commit",
     });
     // Output the content
     file.save();
